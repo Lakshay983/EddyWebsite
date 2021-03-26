@@ -5,15 +5,7 @@
 </head>
 <body>
 	<div id='graph'></div>
-    <script>
-        var data = [
-  {
-    x: ['2/21/13', '2/22/13', '2/23/13', '2/24/13', '2/25/13','2/26/13','2/27/13'],
-    y: [10, 4, 6, 20, 16 , 10, 30],
-    type: 'bar'
-  }
-    ];
-Plotly.newPlot('graph', data);
-    </script>
+    <button onclick="downloadGraph()", id="button">Download Graph</button>
+    <script src="graph.js"></script>
 </body>
 <html>
