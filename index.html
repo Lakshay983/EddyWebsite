@@ -3,6 +3,12 @@
 <head>
 	<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
     <style>
+      .center {
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
         #button {
           background-color: blue;
           border: none;
@@ -19,7 +25,9 @@
 </head>
 <body>
 	<div id='graph'></div>
+  <div class="center">
     <button onclick="downloadGraph()", id="button">Download Graph</button>
+  </div>
     <script src="graph.js"></script>
 </body>
 <html>
