@@ -1,3 +1,4 @@
+      
         var xPoints=['Joe', 'Jimmy', 'JoJo', 'Jolene', 'Joseph','Jeremey','Johnny'];
         var yPoints=[10, 4, 6, 20, 16 , 10, 30];
         var list = [];
