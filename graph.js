@@ -2,7 +2,9 @@ var xPoints=['Joe', 'Jimmy', 'JoJo', 'Jolene', 'Joseph','Jeremey','Johnny'];
         var yPoints=[10, 4, 6, 20, 16 , 10, 30];
        var points = {};
         xPoints.forEach((xPoints, i) => points[xPoints] = yPoints[i]);
-        
+        array.sort(function(a, b) {
+            return a.age - b.age;
+          });
     var data = [
   {
     x: Object.keys(points),
@@ -25,8 +27,8 @@ Plotly.newPlot('graph', data, layout);
         Plotly.newPlot('graph', data, layout).then(function(gd) {
       Plotly.downloadImage(gd, {
         format: 'png',
-        height: 300,
-        width: 300,
+        height: 640,
+        width: 640,
         filename: 'masksSoldGraph'
       })
     });;
