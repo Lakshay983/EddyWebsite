@@ -14,22 +14,30 @@
   {
     x: xPoints,
     y: yPoints,
+    marker:{color: ['rgba(204,204,204,1)', 'rgba(222,45,38,1)', 'rgba(204,204,204,1)', 'rgba(204,204,204,1)', 'rgba(204,204,204,1)']},
     type: 'bar'} ];
     var layout = {
-  title: 'Number of masks donated per person',
+  title: 'Number of masks donated per class',
+  font:{size:25},
   xaxis: {
     showgrid: true,
     zeroline: true,
     linewidth: 3,
     gridcolor:'#000000',
-    gridwidth:3
+    gridwidth:3,
+    tickfont:{
+      size:20
+    }
   },
   yaxis: {
-    title: 'Number of masks donated',
+    title: {text:'Number of masks donated',font:{size:20}},
     showline: true,
     linewidth: 3,
     gridcolor:'#000000',
-    gridwidth:3
+    gridwidth:3,
+    tickfont:{
+      size:20
+    }
   }
 };
 Plotly.newPlot('graph', data, layout);
@@ -38,8 +46,8 @@ Plotly.newPlot('graph', data, layout);
         Plotly.newPlot('graph', data, layout).then(function(gd) {
       Plotly.downloadImage(gd, {
         format: 'png',
-        height: 500,
-        width: 500,
+        height: 650,
+        width: 650,
         filename: 'masksSoldGraph'
       })
     });;
