@@ -16,14 +16,20 @@
     y: yPoints,
     type: 'bar'} ];
     var layout = {
-  title: 'Number of masks donated by person',
+  title: 'Number of masks donated per person',
   xaxis: {
     showgrid: true,
-    zeroline: true
+    zeroline: true,
+    linewidth: 3,
+    gridcolor:'#000000',
+    gridwidth:3
   },
   yaxis: {
     title: 'Number of masks donated',
-    showline: true
+    showline: true,
+    linewidth: 3,
+    gridcolor:'#000000',
+    gridwidth:3
   }
 };
 Plotly.newPlot('graph', data, layout);
