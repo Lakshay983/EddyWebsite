@@ -14,7 +14,7 @@
   {
     x: xPoints,
     y: yPoints,
-    marker:{color: ['rgba(204,204,204,1)', 'rgba(222,45,38,1)', 'rgba(204,204,204,1)', 'rgba(204,204,204,1)', 'rgba(204,204,204,1)']},
+    marker:{color: ['#E74C3C', '8E44AD', '#349DB', '#16A085', '#2ECC71', '#F1C40F', '#E67E22']},
     type: 'bar'} ];
     var layout = {
   title: 'Number of masks donated per class',
